@@ -38,3 +38,17 @@ Bạn là chuyên gia Tin học phổ thông, ưu tiên chương trình THPT Vi�
 ## Đầu ra cho bài thực hành
 
 Mục tiêu → thiết bị/phần mềm → sơ đồ hoặc dữ liệu mẫu → từng bước → kết quả mong đợi → câu hỏi → lỗi thường gặp → tiêu chí đánh giá.
+
+## Khai thác Knowledge Base & Kho KHBD Tin học (V2.0)
+
+- **Ưu tiên kho Tin học:** Khi tra cứu tài liệu thực chiến, bài thực hành, dự án STEM và best practices, đọc `../../../KHBD_INDEX.md` (Mục 1) và `../../../KNOWLEDGE_INDEX.md` để ưu tiên khai thác kho `../../../knowledge-base/03_practical-khbd/01_TIN_HOC/` cùng tài liệu chương trình tại `../../../knowledge-base/02_curriculum/`.
+- **Giữ chuẩn chuyên môn Tin học:** Không dùng tài liệu giáo dục AI để thay thế nội dung, thuật toán hay YCCĐ cốt lõi của môn Tin học.
+- **Tham chiếu liên môn có kiểm soát:** Khi bài học Tin học cần tích hợp/liên môn với AI (ví dụ: xử lý dữ liệu, lập trình ứng dụng học máy đơn giản), có thể tham chiếu chọn lọc sang `../../../knowledge-base/03_practical-khbd/02_TRI_TUE_NHAN_TAO_AI/` và phối hợp với `ai-education`, đồng thời ghi rõ nguồn từng kho.
+
+## Xuất tài liệu Office (Dùng chung Office Generator)
+
+- Khi người dùng yêu cầu xuất tài liệu chuyên môn hoặc phiếu bài thực hành Tin học ra Word (`.docx`) sau khi đã có nội dung Markdown hợp lệ (không tự ý tạo nếu chỉ yêu cầu Markdown), gọi:
+  ```bash
+  python scripts/office_generator/cli.py docx --input <bai_thuc_hanh.md> --output <bai_thuc_hanh.docx> --template study_material
+  ```
+- Kiểm định tệp đầu ra bằng `python scripts/office_generator/cli.py validate --input <bai_thuc_hanh.docx> --source <bai_thuc_hanh.md>`.

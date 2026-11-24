@@ -32,3 +32,11 @@ description: Viết kịch bản video giáo dục và prompt tạo video AI; x�
 - Không dùng hình ảnh/giọng nói của người thật khi chưa có quyền.
 - Với trẻ em, tránh khai thác thông tin định danh hoặc hình ảnh nhạy cảm.
 - Không hứa đồng bộ khẩu hình hoàn hảo; nêu cách làm voice-over hoặc lip-sync tùy công cụ.
+
+## Xuất tài liệu Office (Dùng chung Office Generator)
+
+- Khi người dùng yêu cầu xuất kịch bản video, Character Bible và bảng Storyboard ra tệp Word (`.docx`) sau khi đã có kịch bản Markdown hợp lệ (không tự ý tạo nếu chỉ yêu cầu Markdown), gọi:
+  ```bash
+  python scripts/office_generator/cli.py docx --input <kich_ban_video.md> --output <kich_ban_video.docx> --template general
+  ```
+- Kiểm định tệp đầu ra bằng `python scripts/office_generator/cli.py validate --input <kich_ban_video.docx> --source <kich_ban_video.md>`.

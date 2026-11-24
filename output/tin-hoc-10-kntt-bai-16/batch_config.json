@@ -1,0 +1,41 @@
+{
+  "report_file": "output/tin-hoc-10-kntt-bai-16/07_Bao_Cao_Kiem_Dinh_Office.md",
+  "jobs": [
+    {
+      "input": "output/tin-hoc-10-kntt-bai-16/01_KHBD_Bai_16_Tin_10_KNTT.md",
+      "output": "output/tin-hoc-10-kntt-bai-16/KHBD_Bai_16_Tin_10_KNTT.docx",
+      "format": "docx",
+      "template": "khbd",
+      "validate": true
+    },
+    {
+      "input": "output/tin-hoc-10-kntt-bai-16/02_Phieu_Hoc_Tap_Va_Thuc_Hanh_Bai_16.md",
+      "output": "output/tin-hoc-10-kntt-bai-16/Phieu_Hoc_Tap_Va_Thuc_Hanh_Bai_16.docx",
+      "format": "docx",
+      "template": "study_material",
+      "validate": true
+    },
+    {
+      "input": "output/tin-hoc-10-kntt-bai-16/03_Kich_ban_Slide_Bai_16.md",
+      "output": "output/tin-hoc-10-kntt-bai-16/Bai_16_Ngon_ngu_lap_trinh_bac_cao_va_Python.pptx",
+      "format": "pptx",
+      "template": "education",
+      "speaker_notes": "output/tin-hoc-10-kntt-bai-16/Speaker_Notes_Bai_16.md",
+      "validate": true
+    },
+    {
+      "input": "output/tin-hoc-10-kntt-bai-16/04_De_Kiem_Tra_Va_Dap_An_Bai_16.md",
+      "output": "output/tin-hoc-10-kntt-bai-16/De_Kiem_Tra_Va_Dap_An_Bai_16.docx",
+      "format": "docx",
+      "template": "exam",
+      "validate": true
+    },
+    {
+      "input": "output/tin-hoc-10-kntt-bai-16/05_Tich_Hop_Nang_Luc_So_Bai_16.md",
+      "output": "output/tin-hoc-10-kntt-bai-16/Tich_Hop_Nang_Luc_So_Bai_16.docx",
+      "format": "docx",
+      "template": "teacher_guide",
+      "validate": true
+    }
+  ]
+}

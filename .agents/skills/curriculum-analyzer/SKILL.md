@@ -33,3 +33,17 @@ Chuyển chương trình, SGK và tài liệu giáo viên cung cấp thành bả
 ## Kiểm soát chất lượng
 
 Không tự nhận diện bộ SGK từ nội dung mơ hồ. Không trộn nội dung giữa các bộ sách. Không bịa số trang. Nếu chỉ có ảnh mờ hoặc trích đoạn thiếu, thông báo giới hạn và yêu cầu trang rõ hơn.
+
+## Phân biệt chương trình Tin học và chương trình Trí tuệ nhân tạo (AI – V2.0)
+
+- **Phân biệt hai hệ chương trình:** Tách bạch rõ **Chương trình GDPT 2018 môn Tin học** (có SGK/SGV và YCCĐ chính thức theo khối 10, 11, 12) với **chương trình / chuyên đề giáo dục Trí tuệ nhân tạo (AI)** (chuyên đề lựa chọn, khung năng lực AI, kế hoạch giáo dục nhà trường, STEM hoặc câu lạc bộ).
+- **Kiểm tra căn cứ trước khi xác định YCCĐ:** Đối chiếu `../../../KNOWLEDGE_INDEX.md`, `../../../KHBD_INDEX.md`, `../../../knowledge-base/02_curriculum/` và `../../../knowledge-base/01_legal/` (kết hợp tài liệu người dùng cung cấp) trước khi kết luận yêu cầu cần đạt và phân bổ thời lượng.
+- **Không tự mặc định nội dung AI thuộc chương trình Tin học chính thức:** Chỉ ghi nhận một nội dung AI thuộc chương trình Tin học chính thức khi văn bản chương trình/SGK nguồn chứng minh rõ (ví dụ đúng mạch kiến thức/chuyên đề Tin học theo quy định); nếu không có căn cứ đó, phải ghi rõ thuộc chương trình/chuyên đề AI độc lập hoặc đề nghị giáo viên xác nhận căn cứ áp dụng.
+
+## Xuất tài liệu Office (Dùng chung Office Generator)
+
+- Khi người dùng yêu cầu xuất báo cáo phân tích chương trình/SGK ra tệp Word (`.docx`) và đã có bản phân tích Markdown nguồn hợp lệ (không tự ý tạo khi người dùng chỉ cần Markdown), gọi:
+  ```bash
+  python scripts/office_generator/cli.py docx --input <phan_tich.md> --output <phan_tich.docx> --template teacher_guide
+  ```
+- Kiểm định đầu ra bằng `python scripts/office_generator/cli.py validate --input <phan_tich.docx> --source <phan_tich.md>`.

@@ -30,3 +30,11 @@ Có thể tạo: kế hoạch tuần/tháng, sổ theo dõi, phân công ban cá
 ## Giới hạn
 
 Không thay thế tư vấn pháp lý, tâm lý hoặc quy trình bảo vệ trẻ em chuyên môn. Khi liên quan đến quy định kỷ luật, quyền học sinh hoặc văn bản pháp luật, phải xác minh nguồn hiện hành và hướng dẫn của nhà trường.
+
+## Xuất tài liệu Office (Dùng chung Office Generator)
+
+- Khi người dùng yêu cầu xuất tài liệu hoạt động học tập, kế hoạch chủ nhiệm, biên bản hoặc thông báo ra Word (`.docx`) và đã có nội dung Markdown hợp lệ (không tự ý tạo nếu chỉ yêu cầu Markdown), gọi:
+  ```bash
+  python scripts/office_generator/cli.py docx --input <tai_lieu.md> --output <tai_lieu.docx> --template teacher_guide
+  ```
+  *(Dùng `--template study_material` cho phiếu hoạt động phát cho học sinh).* Kiểm định bằng `python scripts/office_generator/cli.py validate --input <tai_lieu.docx> --source <tai_lieu.md>`.
